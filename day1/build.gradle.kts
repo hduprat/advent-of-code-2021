@@ -14,5 +14,17 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("dev.duprat.aoc2021.app.AppKt")
+    mainClass.set("dev.duprat.aoc2021.day1.Day1Kt")
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir("src/main/resources")
+        }
+    }
+}
+
+tasks.named<Copy>("processResources") {
+    duplicatesStrategy = DuplicatesStrategy.WARN
 }
