@@ -3,12 +3,7 @@
  */
 package dev.duprat.aoc2021.app
 
-import dev.duprat.aoc2021.utilities.StringUtils
-
 import org.apache.commons.text.WordUtils
 
 fun main() {
-    val tokens = StringUtils.split(MessageUtils.getMessage())
-    val result = StringUtils.join(tokens)
-    println(WordUtils.capitalize(result))
 }
