@@ -3,8 +3,9 @@
  */
 package dev.duprat.aoc2021.day2
 
-class Day2Scenario {
-    public var lines: List<String>
+import dev.duprat.aoc2021.utils.Scenario
+
+class Day2Scenario : Scenario {
     public var x = 0
     public var depth = 0
     private var aim = 0
@@ -15,9 +16,7 @@ class Day2Scenario {
             return Pair(x, depth)
         }
 
-    constructor(aimMode: Boolean = false) {
-        val file = this::class.java.getResource("/input.txt").readText()
-        this.lines = file.split('\n')
+    constructor(aimMode: Boolean = false) : super() {
         this.aimMode = aimMode
     }
 
