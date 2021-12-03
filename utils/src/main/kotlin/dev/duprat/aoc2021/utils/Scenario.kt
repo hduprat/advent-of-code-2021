@@ -8,6 +8,6 @@ open class Scenario {
 
     constructor() {
         val file = this::class.java.getResource("/input.txt").readText()
-        this.lines = file.split('\n')
+        this.lines = file.split('\n').filter { it != "" }
     }
 }
