@@ -6,8 +6,8 @@ package dev.duprat.aoc2021.utils
 open class Scenario {
     public var lines: List<String>
 
-    constructor() {
-        val file = this::class.java.getResource("/input.txt").readText()
+    constructor(inputPath: String = "/input.txt") {
+        val file = this::class.java.getResource(inputPath).readText()
         this.lines = file.split('\n').dropLastWhile { it == "" }
     }
 }
