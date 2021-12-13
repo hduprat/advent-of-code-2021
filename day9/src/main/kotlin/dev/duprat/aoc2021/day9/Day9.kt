@@ -5,8 +5,6 @@ package dev.duprat.aoc2021.day9
 
 import dev.duprat.aoc2021.utils.*
 
-typealias Point = Pair<Int, Int>
-
 typealias Basin = MutableSet<Point>
 
 class Day9Scenario : Scenario {
